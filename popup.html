@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <title>Sprint Team Capacity Calculator</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+        <link rel="stylesheet" href="./styles/popup.css">
+
+    </head>
+    <body>
+        <div id="container">
+            <h3>Sprint Team Capacity Calculator</h3>
+            <form id="capacityForm">
+                <fieldset>
+                    <div>
+                        <label for="daysInSprint">Total Working Days in Sprint:</label>
+                        <input type="number" id="daysInSprint" placeholder="There are 10 working days in 2 week sprint" required>
+                    </div>
+                    <div>
+                        <label for="numOfDevelopers">Total Number of Developers on Team:</label>
+                        <input type="number" id="numOfDevelopers" placeholder="Number of Developers, even if they are out entire sprint" required>
+                    </div>
+                    <div>
+                        <label for="averageVelocity">3-Sprint Average Velocity in Story Points:</label>
+                        <input type="number" id="averageVelocity" placeholder="Total completed points over last 3 sprints / 3" required>
+                    </div>
+                    <div>
+                        <label for="numOfHolidays">Total Number of Holidays in Sprint:</label>
+                        <input type="number" id="numOfHolidays" placeholder="Team has 5 days off for Thanksgiving" required>
+                    </div>
+                    <div>
+                        <label for="timeOffInDays">Total Time Off Per Developer in Days (excluding Holidays):</label>
+                        <input type="number" id="timeOffInDays" placeholder="Jim has 4 days off and Sam has 3 days off = 7" required>
+                    </div>
+                    <div class="button-container">
+                        <button id="reset" class="button button-outline">Reset</button>
+                        <button id="calculate" type="submit">Calculate!</button>
+                    </div>
+                </fieldset>
+            </form>
+            <div id="capacityResult"></div>
+        </div>
+        <script src="./scripts/popup.js"></script>
+    </body>
+</html>
