@@ -14,24 +14,24 @@
             <form id="capacityForm">
                 <fieldset>
                     <div>
-                        <label for="daysInSprint">Total Working Days in Sprint:</label>
-                        <input type="number" id="daysInSprint" placeholder="There are 10 working days in 2 week sprint" required>
+                        <label for="daysInSprint">Total Working Days in a Normal Sprint (disregard holidays)</label>
+                        <input type="number" id="daysInSprint" placeholder="Ex. A normal 2 week sprint = 10 days" required>
                     </div>
                     <div>
-                        <label for="numOfDevelopers">Total Number of Developers on Team:</label>
-                        <input type="number" id="numOfDevelopers" placeholder="Number of Developers, even if they are out entire sprint" required>
+                        <label for="numOfDevelopers">Total Number of Contributors on Team</label>
+                        <input type="number" id="numOfDevelopers" placeholder="# of Contributors, even if they are out the entire sprint" required>
                     </div>
                     <div>
-                        <label for="averageVelocity">3-Sprint Average Velocity in Story Points:</label>
+                        <label for="averageVelocity">Average Story Point Velocity for Last 3 Sprints</label>
                         <input type="number" id="averageVelocity" placeholder="Total completed points over last 3 sprints / 3" required>
                     </div>
                     <div>
-                        <label for="numOfHolidays">Total Number of Holidays in Sprint:</label>
-                        <input type="number" id="numOfHolidays" placeholder="Team has 5 days off for Thanksgiving" required>
+                        <label for="numOfHolidays">Total Number of Holidays During Sprint</label>
+                        <input type="number" id="numOfHolidays" placeholder="Ex. All Contributors have 2 days off for Thanksgiving" required>
                     </div>
                     <div>
-                        <label for="timeOffInDays">Total Time Off Per Developer in Days (excluding Holidays):</label>
-                        <input type="number" id="timeOffInDays" placeholder="Jim has 4 days off and Sam has 3 days off = 7" required>
+                        <label for="timeOffInDays">Total Days Off for All Contributors (excluding holidays)</label>
+                        <input type="number" id="timeOffInDays" placeholder="Ex. Jim has 4 days off and Sam has 3 days off = 7 days" required>
                     </div>
                     <div class="button-container">
                         <button id="reset" class="button button-outline">Reset</button>
